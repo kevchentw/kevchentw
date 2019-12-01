@@ -21,9 +21,9 @@ module.exports = {
         url: `https://www.facebook.com/kevchentw`,
       },
       {
-        name: `CV`,
-        url: `https://kevchentw.com/resume/kuan-yin-chen-resume.pdf`,
-      },
+        name: `Resume`,
+        url: `https://kevchentw.com/resume/kuan-yin-chen-resume.pdf`
+      }
     ],
     navigation: [
       {
