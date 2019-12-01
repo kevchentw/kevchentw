@@ -12,7 +12,6 @@ deploy:
   keep-history: true
   on:
     branch: source
-  local-dir: public
   target-branch: master
   fqdn: kevchentw.com
 before_script:
