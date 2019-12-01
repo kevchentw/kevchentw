@@ -13121,6 +13121,11 @@ typeface-ibm-plex-sans@^0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-ibm-plex-sans/-/typeface-ibm-plex-sans-0.0.75.tgz#47fffee4b9004e9d22300ed99bb679cbeed5c6ff"
   integrity sha512-IBxDEt5r0Xo5EshGBb1CR1ec3ApNI0jK0o2gSGNZIoKml9q99a/Qcbb8u8IK0x/M+nso8FzcMW03Hz6gSfCIAg==
 
+typeface-noto-sans-tc@^0.0.71:
+  version "0.0.71"
+  resolved "https://registry.yarnpkg.com/typeface-noto-sans-tc/-/typeface-noto-sans-tc-0.0.71.tgz#9000ab65f3a86d38bc41309a2dff6f2442464525"
+  integrity sha512-23GSZ66YcCiWqVnVEyOePDZcTKSk7LPsOz0GapzrR6xJuDcOLizUaH9Lk92l/sSJ6JfSAuDnwxm/x6voeKsthQ==
+
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"

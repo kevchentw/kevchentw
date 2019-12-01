@@ -4,6 +4,7 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
+    siteTitle: `Kevin Chen`,
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
     navigation: [
       {
@@ -14,6 +15,10 @@ module.exports = {
         title: `About`,
         slug: `/about`,
       },
+      {
+        title: `Publications`,
+        slug: `/publications`,
+      }
     ],
   },
   plugins: [
