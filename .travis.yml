@@ -11,7 +11,10 @@ deploy:
   local_dir: public
   keep-history: true
   on:
-    branch: master
+    branch: source
+  local-dir: public
+  target-branch: master
+  fqdn: kevchentw.com
 before_script:
   - "npm i -g gatsby"
   - "npm i"
