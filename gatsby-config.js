@@ -5,15 +5,30 @@ require(`dotenv`).config({
 module.exports = {
   siteMetadata: {
     siteTitle: `Kevin Chen`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Kevin Chen`,
+    siteUrl: `https://kevchentw.com`,
+    externalLinks: [
+      {
+        name: `Github`,
+        url: `https://github.com/kevchentw`,
+      },
+      {
+        name: `Linkedin`,
+        url: `https://www.linkedin.com/in/kuan-yin-chen-kevin`,
+      },
+      {
+        name: `Facebook`,
+        url: `https://www.facebook.com/kevchentw`,
+      },
+      {
+        name: `CV`,
+        url: `https://kevchentw.com/resume/kuan-yin-chen-resume.pdf`,
+      },
+    ],
     navigation: [
       {
         title: `Blog`,
         slug: `/blog`,
-      },
-      {
-        title: `About`,
-        slug: `/about`,
       },
       {
         title: `Publications`,
@@ -29,16 +44,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        trackingId: 'UA-149417493-1',
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Kevin Chen`,
+        short_name: `kevin-chen-blog`,
+        description: `Kevin Chen's profile and blog`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
