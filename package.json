@@ -15,8 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"no test specified\" && exit 0",
-    "preDeploy": "gatsby build --prefix-paths",
-    "deploy": "npm run preDeploy && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^1.1.2",
