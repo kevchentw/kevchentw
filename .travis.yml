@@ -17,4 +17,4 @@ deploy:
     branch: source
   fqdn: kevchentw.com
   local_dir: public
-  target_branch: gh-pages
+  target_branch: master
