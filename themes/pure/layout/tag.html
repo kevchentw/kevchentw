@@ -30,7 +30,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149417493-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-149417493-2');
@@ -57,40 +60,47 @@
   </header>
   <article class="ArticleList">
     {{each(options.pages)}}
-      {{if(@this.publish && @this.inList)}}
+    {{if(@this.publish && @this.inList)}}
     <article class="Article">
       <h3 class="Article__Title">
-            {{@this.iconHTML}}
+        {{@this.iconHTML}}
         <a href="{{@this.url}}">
-              {{@this.title}}
-            </a>
-          </h3>
+          {{@this.title}}
+        </a>
+      </h3>
       {{if(@this.descriptionHTML)}}
       <p class="Article__Desc">
-          {{@this.descriptionHTML}}
+        {{@this.descriptionHTML}}
       </p>
       {{/if}}
       <div class="DateTagBar">
-          {{if(@this.date)}}
+        {{if(@this.date)}}
         <span class="DateTagBar__Item DateTagBar__Date">Posted on {{@this.dateString}}</span>
-          {{/if}}
-          {{each(@this.tags)}}
+        {{/if}}
+        {{each(@this.tags)}}
         <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--{{@this.color}}">
-            <a href="tag/{{@this.value}}.html">{{@this.value}}</a>
-          </span>
-          {{/each}}
-        </div>
+          <a href="tag/{{@this.value}}.html">{{@this.value}}</a>
+        </span>
+        {{/each}}
+      </div>
     </article>
-      {{/if}}
-      {{/each}}
+    {{/if}}
+    {{/each}}
   </article>
   <footer class="Footer">
-        <div>&copy; {{siteMeta.title}} 2019</div>
-        <div>&centerdot;</div>
-        <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
-            rel="noopener noreferrer">Notablog</a>.
-        </div>
-    </footer>
+    <div>&copy; {{siteMeta.title}} 2020</div>
+    <div>&centerdot;</div>
+    <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+        rel="noopener noreferrer">Notablog</a>.
+    </div>
+    <div>&centerdot;</div>
+    <div>Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Page</a>.
+    </div>
+    <div>&centerdot;</div>
+    <div>Built with <a href="https://travis-ci.com/" target="_blank" rel="noopener noreferrer">Travis CI
+      </a>.
+    </div>
+  </footer>
 </body>
 
 </html>
