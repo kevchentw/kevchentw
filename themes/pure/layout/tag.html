@@ -26,18 +26,6 @@
       font-size: 20px;
     }
   </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149417493-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-149417493-2');
-  </script>
 </head>
 
 <body>
@@ -79,7 +67,7 @@
         {{/if}}
         {{each(@this.tags)}}
         <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--{{@this.color}}">
-          <a href="tag/{{@this.value}}.html">{{@this.value}}</a>
+          <a href="tag/{{@this.value|escapeTag}}.html">{{@this.value}}</a>
         </span>
         {{/each}}
       </div>
@@ -101,6 +89,18 @@
       </a>.
     </div>
   </footer>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149417493-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149417493-2');
+  </script>
 </body>
 
 </html>
